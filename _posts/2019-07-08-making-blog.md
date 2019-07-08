@@ -15,7 +15,7 @@ title: 윈도우 환경에서 지킬 블로그 만들기
 나는 1, 2, 3을 썼다. (루비는 처음입니다 ㅜㅜ)
 
 그 다음, 지킬 홈페이지에서  지킬을 사용하는 방법이 잘 나와있다.
-한글버전 (https://jekyllrb-ko.github.io/)은 업데이트가 조금 느리긴하지만, 한글인 것이 너무 좋다.
+한글버전 ([https://jekyllrb-ko.github.io/](https://jekyllrb-ko.github.io/))은 업데이트가 조금 느리긴하지만, 한글인 것이 너무 좋다.
 간단하게 설명하자면, 루비를 설치한 후 cmd창을 다시 켜서 "gem install jekyll bundler"를 치면 지킬이 설치된다.
 그 후, "jekyll new 블로그이름"을 입력하면 해당 블로그 이름을 이름으로 가진 폴더가 생기고, 그 안에 기본적인 파일들이 생긴다.
 (블로그 이름은 github와 연결할 때를 위해 username.github.io로 하는 것이 좋다고 한다.)
