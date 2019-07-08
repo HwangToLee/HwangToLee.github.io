@@ -9,7 +9,7 @@ title: 윈도우 환경에서 지킬 블로그 만들기
 깃허브와 연동도 좀 더 잘 되는 느낌이고. (내가 소스트리를 잘 못써서 그런것도 있다...)
 
 우선, 윈도우 환경에서 jekyll을 사용하려면 Ruby를 설치해야한다. 
-https://rubyinstaller.org/downloads/ 이 곳에서 루비를 받으면 된다. 
+[https://rubyinstaller.org/downloads/](https://rubyinstaller.org/downloads/) 이 곳에서 루비를 받으면 된다.
 나는 사이트에서 Ruby+Devkit 2.5.5-1 (x64) 를 추천하는 것 같아서 이 버전을 받았다.
 설치 후 나오는 cmd창에서 1번 2번 3번 세가지 중 무얼 설치할 것인지 묻는데, 잘 모르겠으면 1, 2, 3을 선택하라고 해서
 나는 1, 2, 3을 썼다. (루비는 처음입니다 ㅜㅜ)
