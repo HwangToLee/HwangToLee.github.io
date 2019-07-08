@@ -21,5 +21,5 @@ title: 윈도우 환경에서 지킬 블로그 만들기
 (블로그 이름은 github와 연결할 때를 위해 username.github.io로 하는 것이 좋다고 한다.)
 cd 블로그이름을 해서 cmd에서 그 폴더 안으로 들어간 후, "jekyll serve"라고 입력하면
 http://localhost:4000 이라는 웹사이트에 로컬로 자신의 블로그가 생긴 것을 볼 수 있다.
-
+![](http://localhost:4000/%C4%B8%C3%B3.PNG)
 깃허브와 연결하는 것과 admin페이지를 사용하는 것은 다음 포스팅에서 다루도록 하겠다.
