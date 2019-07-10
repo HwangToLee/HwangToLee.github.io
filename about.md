@@ -5,8 +5,13 @@ permalink: /about/
 feature-img: "assets/img/sample_feature_img_2.png"
 ---
 
-Type Theme is a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
-
-Head over to the [theme's documentation](https://rohanchandra.github.io/project/type/) for much more information about Type Theme or to install this theme on your own Jekyll site.
-
-This file is an example of a page in Jekyll, that automatically shows up in the header navigation, you can delete or modify this file freely.
+안녕하세요, 저는 광운대학교에 재학중인 이원빈이라고 합니다.
+이 블로그에는 제 공부 내용을 올리려고합니다.
+***************
+##1. Languages
+*Python, C
+##2. History
+2019.03 ~ NOW: 광운대학교 정보융합학부 재학 중
+2019.03 : 광운대학교 입학
+##3. Project
+NOT YET
