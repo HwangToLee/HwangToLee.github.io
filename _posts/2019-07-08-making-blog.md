@@ -1,7 +1,7 @@
 ---
 title: 윈도우 환경에서 지킬(jekyll) 블로그 만들기
 date: '2019-07-08 10:11:47'
-categories: jekyll
+categories: Github_blog/Jekyll
 ---
 
 타 OS와 달리, 윈도우 환경에서는 지킬을 이용해서 블로그를 만드는 것이 쉽지는 않다.
