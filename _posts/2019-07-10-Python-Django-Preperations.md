@@ -6,8 +6,8 @@ categories: Python, Django
 
 이번 포스트부터는 파이썬 웹 프로그래밍 오픈소스 프레임워크인 Django에 대해서 다루어보려고 한다. 이 포스트에서는 앞으로 파이썬 Django를 할 때 필요한 기초적인 프로그램들을 소개하려고 한다. (이 포스트는 [YOUTUBE : LIFE SOFT](https://www.youtube.com/channel/UCqRTjWqD-ZWHj0ZoPSKVWBw) 님이 게시하시는 글을 통해 공부하고 작성한 것이다.)
 
-# 1. Python
-당연하지만 Django는 파이썬 웹 프로그래밍 오픈소스 프레임워크이기 때문에 파이썬이 컴퓨터에 설치되어 있어야한다. 설치는 [파이썬 다운로드](https://www.python.org/downloads/)에서 간단하게 할 수 있다.
+# 1. Python, Django
+당연하지만 Django는 파이썬 웹 프로그래밍 오픈소스 프레임워크이기 때문에 파이썬이 컴퓨터에 설치되어 있어야한다. 설치는 [파이썬 다운로드](https://www.python.org/downloads/)에서 간단하게 할 수 있다. 또한, Django를 이용하기 때문에 당연하게도 Django 또한 다운로드 받아야한다. Django 또한 오픈소스 프레임워크이기 때문에 [이 곳]( https://www.djangoproject.com/)에서 손쉽게 다운로드 받을 수 있다.
 
 # 2. Eclipse (Plugin : Pydev)
 내가 공부한 곳에서는 Eclipse의 Pydev 플러그인을 사용한 환경에서 개발했기 때문에, 나도 이 환경을 사용했다. (필수 아님). 추가로, Eclipse에서 HTML을 Edit할 수 있는 것도 마켓 플레이스에서 받아놓으면 좋다. Eclipse는 [이클립스 홈페이지]( https://www.eclipse.org/)에서 무료로 받을 수 있다.
