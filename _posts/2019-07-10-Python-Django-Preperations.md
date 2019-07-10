@@ -1,5 +1,7 @@
 ---
 title: 파이썬 Django 사전준비
+date: 2017-07-10 10:10:10
+categories: Django
 ---
 
 이번 포스트부터는 파이썬 웹 프로그래밍 오픈소스 프레임워크인 Django에 대해서 다루어보려고 한다. 이 포스트에서는 앞으로 파이썬 Django를 할 때 필요한 기초적인 프로그램들을 소개하려고 한다. (이 포스트는 [YOUTUBE : LIFE SOFT](https://www.youtube.com/channel/UCqRTjWqD-ZWHj0ZoPSKVWBw) 님이 게시하시는 글을 통해 공부하고 작성한 것이다.)
