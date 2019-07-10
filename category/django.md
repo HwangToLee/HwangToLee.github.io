@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Markup
+title: Django
 ---
 
 Another sample category page.
