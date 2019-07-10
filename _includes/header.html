@@ -13,25 +13,28 @@
 			<a href="{{ site.baseurl }}/">{{ site.theme_settings.title }}</a>
 		</h1>
 	</div>
-	<nav class="site-nav">
-		<ul>
-			{% if site.theme_settings.site_navigation_sort %}
+	<!--
+		<nav class="site-nav">
+			<ul>
+				{% if site.theme_settings.site_navigation_sort %}
 				{% assign site_pages = site.pages | sort: site.theme_settings.site_navigation_sort %}
-			{% else %}
+				{% else %}
 				{% assign site_pages = site.pages %}
-			{% endif %}
-			{% for page in site_pages %}
-			{% if page.title and page.hide != true %}
-			<li>
-				<a class="page-link" href="{{ page.url | relative_url }}">
-					{{ page.title }}
-				</a>
-			</li>
-			{% endif %}
-			{% endfor %}
-			<!-- Social icons from Font Awesome, if enabled  -->
-			{% include icons.html %}
-
+				{% endif %}
+				{% for page in site_pages %}
+				{% if page.title and page.hide != true %}
+				<li>
+					<a class="page-link" href="{{ page.url | relative_url }}">
+						{{ page.title }}
+					</a>
+				</li>
+				{% endif %}
+				{% endfor %}
+			-->
+			<!-- Social icons from Font Awesome, if enabled  
+				{% include icons.html %}
+			-->
+			
             <!-- Search bar -->
             {% if site.theme_settings.search %}
             <li>
