@@ -77,7 +77,8 @@ python manage.py migrate</code>
 SQLite Expert를 통해 db.sqlite3 파일을 확인해보면, bookmark_bookmark 테이블에 내용이 추가된 것을 알 수 있다.  
 
 ### 6. Url과 페이지 작성
-**projname/urls.py**  
+**testproj/urls.py**  
+
 ```python
 from django.contrib import admin
 from django.conf.urls import url
