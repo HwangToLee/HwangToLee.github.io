@@ -113,6 +113,10 @@ def detail(request):
     return render_to_response("detail.html",{"dto":dto}) 
 ```
 
+urlList에는 "title"을 정렬해주고, urlCount에는 Bookmark 테이블의 레코더 갯수를 세서 저장해준다.  
+render_to_response는 urlList와 urlCount를 가지고 list.html로 렌더링한다 (넘어간다).  
+(그냥 render 함수는 자료를 전달하지 못함)
+
 **bookmark/templates/list.html**
 
 ```html
