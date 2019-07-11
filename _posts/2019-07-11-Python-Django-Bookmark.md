@@ -99,9 +99,8 @@ def detail(request):
     addr=request.GET["url"]
     dto=Bookmark.objects.get(url=addr)
     return render_to_response("detail.html",{"dto":dto}) 
-</pre></code>  
+</code></pre>  
 **bookmark/templates/list.html**
-
 
 <pre><code><!DOCTYPE html>
 <html>
