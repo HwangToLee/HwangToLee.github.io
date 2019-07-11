@@ -35,23 +35,26 @@ Anaconda Prompt에서 cd (change directory)명령어를 통해 현재 만든 프
 새로운 테이블을 만들었으면, models.py에서 해당 테이블에 대한 모델 클래스를 정의해야 하고, models.py에 등록한 그 테이블을 관리자 페이지에서 보이도록 만들어야 한다.
 
 **bookmark/models.py**  
-<pre><code>from django.db import modelsclass
+```python
+from django.db import modelsclass
+
 Bookmark(models.Model):
     title=models.CharField(max_length=100,blank=True,null=True)
     url=models.URLField("url",unique=True)
     def __str__(self):
         return self.title
-</code></pre>
+```
 
 django에서 지원하는 models의 Model이라는 클래스를 상속하는 자식 클래스 Bookmark를 만들고, title과 url 필드를 만들어서 초기화시켜준다.  또한, 출력시 title이 나오도록 설정해놓았다. 
 
 **bookmark/admin.py**  
-<pre><code>from django.contrib import admin
+```python
+from django.contrib import admin
 from bookmark.models import Bookmark
 class BookmarkAdmin(admin.ModelAdmin):
     list_display = ('title','url')
 admin.site.register(Bookmark,BookmarkAdmin)
-</code></pre>
+```
 
 BookmarkAdmin 클래스는 방금 만든 Bookmark 클래스가 관리자 페이지에서 나타나는 모습을 정의하는 클래스이다. 이 클래스 또한 admin.ModelAdmin 클래스를 상속시켜준다.   
 admin.site.register(Bookmark, BookmarkAdmin) 함수를 통해 Bookmark 클래스와 BookmarkAdmin 클래스를 관리자 페이지에 등록했다.  
@@ -74,35 +77,43 @@ SQLite Expert를 통해 db.sqlite3 파일을 확인해보면, bookmark_bookmark 
 
 ## 6. Url과 페이지 작성
 **projname/urls.py**  
-<pre><code>from django.contrib import admin
+```python
+from django.contrib import admin
 from django.conf.urls import url
 from bookmark import views
+
 urlpatterns = [
     url(r"^admin/", admin.site.urls),
     url(r"^$", views.home),
     url(r"^detail$", views.detail)
 ]
-</code></pre>
+```
+
 우선 위와 같이 url 패턴을 정의해준다.  
 r은 정규 표현식을 뜻하고, ^는 시작을, $은 끝을 뜻한다. 즉, r"^$"는 아무것도 없다는 뜻이다.
 views.home과 views.detail은 우리가 views.py에서 지금 만들 것이다.  
 **bookmark/views.py**  
 
-<pre><code>from bookmark.models import Bookmark
+```python
+from bookmark.models import Bookmark
 from django.shortcuts import render_to_response
+
 def home(request):
     urlList=Bookmark.objects.order_by("title")
     urlCount=Bookmark.objects.all().count()
     return render_to_response(
         "list.html", {"urlList":urlList, "urlCount":urlCount})
+
 def detail(request):
     addr=request.GET["url"]
     dto=Bookmark.objects.get(url=addr)
     return render_to_response("detail.html",{"dto":dto}) 
-</code></pre>  
+```
+
 **bookmark/templates/list.html**
 
-<pre><code><!DOCTYPE html>
+```html
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -121,11 +132,11 @@ def detail(request):
 </div>
 </body>
 </html>
-</code></pre>
+```
 
 **bookmark/templates/detail.html**
-
-<pre><code><!DOCTYPE html>
+```html
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -140,4 +151,5 @@ def detail(request):
 </div>
 </body>
 </html>
-</code></pre>
+```
+
