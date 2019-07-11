@@ -30,7 +30,7 @@ Anaconda Prompt에서 cd (change directory)명령어를 통해 현재 만든 프
 이제 북마크 앱을 만들어보려고 한다. Anaconda prompt에서 해당 프로젝트의 디렉토리에 다음 코드를 입력한다.  
 <code> python manage.py startapp bookmark </code>  
 그러면 해당 디렉토리에 북마크 앱에 관련된 디렉토리가 추가된다.  
-이 작업 후에 프로젝트 이름 / 프로젝트 이름 디렉토리에 있는 settings.py를 조금 수정해야한다. INSTALLED_APPS라는 항목 안에 ‘bookmark’,를 추가해주고, LANGUAGE_CODE을 ‘ko-kr’, TIME_ZONE을 ‘Asia/Seoul’로 수정해준다.
+이 작업 후에 projname/projname/settings.py를 조금 수정해야한다. INSTALLED_APPS라는 항목 안에 ‘bookmark’,를 추가해주고, LANGUAGE_CODE을 ‘ko-kr’, TIME_ZONE을 ‘Asia/Seoul’로 수정해준다.
 
 ### 4. 모델 클래스 정의와 Admin 사이트 설정
 새로운 테이블을 만들었으면, models.py에서 해당 테이블에 대한 모델 클래스를 정의해야 하고, models.py에 등록한 그 테이블을 관리자 페이지에서 보이도록 만들어야 한다.
