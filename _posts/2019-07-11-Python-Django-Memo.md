@@ -156,7 +156,7 @@ def delete_memo(request):
 	<h2>한줄메모장</h2>
 	메모 갯수 : {{memoCount}}
 	<form method="post" action="insert_memo">
-		{% csrf_token %}
+        <pre>{% csrf_token %}</pre>
 		이름 : <input name="writer">
 		메모 : <input name="memo">
 		<input type="submit" value="확인">
