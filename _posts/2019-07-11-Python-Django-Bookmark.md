@@ -91,7 +91,7 @@ urlpatterns = [
 ```
 
 우선 위와 같이 url 패턴을 정의해준다.  
-r은 정규 표현식을 뜻하고, ^는 시작을, $은 끝을 뜻한다. 즉, r"^$"는 아무것도 없다는 뜻이다.
+r은 정규 표현식을 뜻하고, ^는 시작을, $은 끝을 뜻한다. 즉, r"^$"는 아무것도 없다는 뜻이다.  
 views.home과 views.detail은 우리가 views.py에서 지금 만들 것이다.  
 **bookmark/views.py**  
 
@@ -153,3 +153,6 @@ def detail(request):
 </body>
 </html>
 ```
+views.py에 있는 함수 home과 detail은 각각 템플릿 list.html, detail.html에 주어진 데이터를 대입하면서 불러온다. 중괄호 2개는 해당 데이터를 대입한다는 뜻이다.
+
+즉, 작동방식은 이와 같다. url patterns를 보고 현재	 url에 해당하는 함수를 호출한다. 해당하는 함수는 호출되면 템플릿에 데이터를 집어넣어서 유저에게 보여준다. 
