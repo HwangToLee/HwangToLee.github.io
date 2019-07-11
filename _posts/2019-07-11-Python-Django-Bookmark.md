@@ -2,6 +2,7 @@
 title: 파이썬 Django Bookmark 앱 만들기
 date: '2019-07-11 11:00:00'
 categories: Python/Django
+comments: true
 ---
 [앞선 포스트](https://hwangtolee.github.io/python,/django/2019/07/10/Python-Django-Preperations.html)에서 파이썬 Django를 이클립스에서 사용하기 위한 최소한의 세팅을 끝냈다. 이번 포스트에서는 북마크 앱을 만들어 볼 것이다.
 
