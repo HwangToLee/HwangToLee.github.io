@@ -3,13 +3,12 @@
   border-top: 1px solid $border-color;
   margin:auto;
   padding:0;
-  font-size:14px;
+  font-size:15px;
   text-align: center;
   clear:left;
   }
 
   .site-category ul{
-  //background: rgb(109,109,109);
   height:50px;
   list-style:none;
   line-height: 1.5;
@@ -135,7 +134,7 @@
       ul {
         display: inline-block;
         float: left;
-        padding-top: $padding-small;
+        padding-top: 3% 3% 0%;
         text-align: left;
         width: 100%;
       }
