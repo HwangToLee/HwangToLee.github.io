@@ -139,11 +139,9 @@ def delete_memo(request):
 ```
 
 **home(request)**함수에서 **memoList**에 **"-idx"**를 사용한 것은 내림차순으로 정렬하라는 뜻이다. ("-" 없으면 오름차순 정렬)  
-
-<code>csrf_exempt</code>와 바로 밑에 나올 <code>csrf_token</code>은 **Cross Site Scripting Attack(크로스 사이트스크립팅 공격)**을 방지하기 위한 코드로, Django에서는 이런식으로 <code>input</code> 태그등을 사용할 때 필수적으로 넣어야한다고 한다.  
-
-<code>memo.save</code> 함수는 <code>insert_memo</code>와 같이 **id**가 없을  때는 데이터 추가를, <code>update_memo</code>와 같이 id가 있을 때는 데이터 수정을 해준다.  
-<code>return redirect("/")</code>는 함수가 끝난 뒤 기본 화면 ("http://localhost")로 돌아가게 해준다.
+**csrf_exempt**와 바로 밑에 나올 **csrf_token**은 **Cross Site Scripting Attack(크로스 사이트스크립팅 공격)**을 방지하기 위한 코드로, Django에서는 이런식으로 **input** 태그등을 사용할 때 필수적으로 넣어야한다고 한다.  
+**memo.save** 함수는 **insert_memo**와 같이 **id**가 없을  때는 데이터 추가를, **update_memo**와 같이 id가 있을 때는 데이터 수정을 해준다.  
+**return redirect("/")**는 함수가 끝난 뒤 기본 화면 ("http://localhost")로 돌아가게 해준다.
 
 **memo/templates/list.html**
 
