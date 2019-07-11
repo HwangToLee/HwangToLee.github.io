@@ -8,7 +8,7 @@ categories: Python/Django
 (이 포스트는 [YOUTUBE : LIFE SOFT](https://www.youtube.com/channel/UCqRTjWqD-ZWHj0ZoPSKVWBw) 님이 게시하시는 글을 통해 공부하고 작성한 것이다.)
 
 ### 1. 새로운 프로젝트 만들기
-File -> New -> Other (Ctrl + N)을 누르면 다양한 ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄹ옵션들이 뜰 것이다.  
+File -> New -> Other (Ctrl + N)을 누르면 다양한 옵션들이 뜰 것이다.  
 Django를 검색하면 나오는 PyDev의 Django를 선택하고, 이름을 정해서 만들어주자.  
 그러면 프로젝트가 생성되고, 프로젝트 명과 동일한 디렉토리와 manage.py가 생겼을 것이다. 
 
