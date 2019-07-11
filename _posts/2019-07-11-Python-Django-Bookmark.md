@@ -7,12 +7,12 @@ categories: Python/Django
 
 (이 포스트는 [YOUTUBE : LIFE SOFT](https://www.youtube.com/channel/UCqRTjWqD-ZWHj0ZoPSKVWBw) 님이 게시하시는 글을 통해 공부하고 작성한 것이다.)
 
-## 1. 새로운 프로젝트 만들기
+### 1. 새로운 프로젝트 만들기
 File -> New -> Other (Ctrl + N)을 누르면 다양한 옵션들이 뜰 것이다.  
 Django를 검색하면 나오는 PyDev의 Django를 선택하고, 이름을 정해서 만들어주자.  
 그러면 프로젝트가 생성되고, 프로젝트 명과 동일한 디렉토리와 manage.py가 생겼을 것이다. 
 
-## 2. 기본 테이블 생성 및 관리자 계정 (super user) 생성
+### 2. 기본 테이블 생성 및 관리자 계정 (super user) 생성
 Anaconda Prompt에서 cd (change directory)명령어를 통해 현재 만든 프로젝트의 디렉토리로 들어간다. 예를 들어, D:\Projects에 testproj라는 프로젝트를 만들었다면  
 <code> cd D:\Projects\testproj </code>  
 이 코드를 입력하면 된다.  
@@ -26,12 +26,12 @@ Anaconda Prompt에서 cd (change directory)명령어를 통해 현재 만든 프
 <code> python manage.py createsuperuser  </code>  
 이 코드를 입력하면 관리자 계정을 만드는 프로세스에 들어간다. 계정, 이메일, 비밀번호를 순서대로 입력하게 되는데, 이메일은 필수 사항이 아니라서 그냥 엔터만 쳐도 된다. 비밀번호는 영문과 숫자를 포함해야하며 8자이상이여야한다는 조건이 있다.
 
-## 3. 북마크 앱 만들기
+### 3. 북마크 앱 만들기
 이제 북마크 앱을 만들어보려고 한다. Anaconda prompt에서 해당 프로젝트의 디렉토리에 다음 코드를 입력한다.  
 <code> python manage.py startapp bookmark </code>  
 그러면 해당 디렉토리에 북마크 앱에 관련된 디렉토리가 추가된다. 이 작업 후에 프로젝트 이름 / 프로젝트 이름 디렉토리에 있는 settings.py를 조금 수정해야한다. INSTALLED_APPS라는 항목 안에 ‘bookmark’,를 추가해주고, LANGUAGE_CODE을 ‘ko-kr’, TIME_ZONE을 ‘Asia/Seoul’로 수정해준다.
 
-## 4. 모델 클래스 정의와 Admin 사이트 설정
+### 4. 모델 클래스 정의와 Admin 사이트 설정
 새로운 테이블을 만들었으면, models.py에서 해당 테이블에 대한 모델 클래스를 정의해야 하고, models.py에 등록한 그 테이블을 관리자 페이지에서 보이도록 만들어야 한다.
 
 **bookmark/models.py**  
@@ -48,6 +48,7 @@ Bookmark(models.Model):
 django에서 지원하는 models의 Model이라는 클래스를 상속하는 자식 클래스 Bookmark를 만들고, title과 url 필드를 만들어서 초기화시켜준다.  또한, 출력시 title이 나오도록 설정해놓았다. 
 
 **bookmark/admin.py**  
+
 ```python
 from django.contrib import admin
 from bookmark.models import Bookmark
@@ -64,7 +65,7 @@ admin.site.register(Bookmark, BookmarkAdmin) 함수를 통해 Bookmark 클래스
 python manage.py migrate</code>
 </pre>
 
-## 5. 웹서버 구동과 관리자 페이지
+### 5. 웹서버 구동과 관리자 페이지
 
 <code>python manage.py runserver localhost:80</code>
 
@@ -75,7 +76,7 @@ python manage.py migrate</code>
 
 SQLite Expert를 통해 db.sqlite3 파일을 확인해보면, bookmark_bookmark 테이블에 내용이 추가된 것을 알 수 있다.  
 
-## 6. Url과 페이지 작성
+### 6. Url과 페이지 작성
 **projname/urls.py**  
 ```python
 from django.contrib import admin
@@ -120,7 +121,7 @@ def detail(request):
 <title>Insert title here</title>
 </head>
 <body>
-<div id = "container">
+<div id="container">
 <h1>Bookmark List</h1>
 <ul>
 	{% for row in urlList %}
@@ -143,7 +144,7 @@ def detail(request):
 <title>Insert title here</title>
 </head>
 <body>
-<div id = "container">
+<div id="container">
 <h1>{{dto.title}}</h1>
 <ul>
 <li>URL:<a href="{{dto.url}}">{{dto.url}}</a></li>
@@ -152,4 +153,3 @@ def detail(request):
 </body>
 </html>
 ```
-
