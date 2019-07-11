@@ -13,8 +13,8 @@ Django를 검색하면 나오는 PyDev의 Django를 선택하고, 이름을 정�
 그러면 프로젝트가 생성되고, 프로젝트 명과 동일한 디렉토리와 manage.py가 생겼을 것이다. 
 
 ### 2. 기본 테이블 생성 및 관리자 계정 (super user) 생성
-Anaconda Prompt에서 cd (change directory)명령어를 통해 현재 만든 프로젝트의 디렉토리로 들어간다. 예를 들어, D:\Projects에 testproj라는 프로젝트를 만들었다면  
-<code> cd D:\Projects\testproj </code>  
+Anaconda Prompt에서 cd (change directory)명령어를 통해 현재 만든 프로젝트의 디렉토리로 들어간다. 예를 들어, D:\Projects에 projname라는 프로젝트를 만들었다면  
+<code> cd D:\Projects\projname </code>  
 이 코드를 입력하면 된다.  
 **이제부터 하는 모든 명령어는 이렇게 해당 프로젝트의 디렉토리로 들어와서 해야한다.**
 
@@ -77,7 +77,7 @@ python manage.py migrate</code>
 SQLite Expert를 통해 db.sqlite3 파일을 확인해보면, bookmark_bookmark 테이블에 내용이 추가된 것을 알 수 있다.  
 
 ### 6. Url과 페이지 작성
-**testproj/urls.py**  
+**projname/urls.py**  
 
 ```python
 from django.contrib import admin
