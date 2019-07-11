@@ -7,7 +7,7 @@ theme_settings:
   # Meta
   title: HwangTo's Blog
   avatar: assets/img/avatar.png
-  favicon: assets/favicon.ico
+  favicon: assets/code.ico
   gravatar: # Email MD5 hash
   description: "A blog about coding and programming" # used by search engines
 
@@ -17,6 +17,7 @@ theme_settings:
   header_text_feature_image:
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+   icon by <a href="https://iconscout.com/icon/code-280" target="_blank">Code Icon</a> by <a href="https://iconscout.com/contributors/elegant-themes">Elegant Themes</a> on <a href="https://iconscout.com">Iconscout</a>
 
   # Icons
   rss: false
