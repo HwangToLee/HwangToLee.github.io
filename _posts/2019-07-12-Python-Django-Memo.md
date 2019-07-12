@@ -18,7 +18,7 @@ comments: true
 ### 2. 기본 테이블 생성 및 관리자 계정 (super user) 생성
 
 <code> python manage.py migrate </code>  
-**Anaconda Prompt**에서 이 코드를 입력해서 **db.sqlite3**라는 기본 테이블이 해당 디렉토리에 생성하자.  
+**Anaconda Prompt**에서 해당 프로젝트의 디렉토리로 간 뒤 이 코드를 입력해서 **db.sqlite3**라는 기본 테이블이 해당 디렉토리에 생성하자.  
 <code> python manage.py createsuperuser  </code>  
 또한, 이 코드를 입력해서 관리자 계정을 만들어주자.
 
