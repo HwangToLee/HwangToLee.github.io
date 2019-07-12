@@ -274,7 +274,7 @@ function show_result(){
 		<td>{{row.sum_num}}</td>
 		<td>{{row.rate}}</td>
 	</tr>
-	{% endfor %}{% raw %}
+	{% endfor %}{% endraw %}
 </table>
 </body>
 </html>
