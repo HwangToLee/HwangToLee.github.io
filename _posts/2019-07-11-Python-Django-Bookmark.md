@@ -1,5 +1,5 @@
 ---
-title: 파이썬 Django Bookmark 앱 만들기
+title: Django 02. Django Bookmark 앱 만들기
 date: '2019-07-11 11:00:00'
 categories: Python/Django
 ---

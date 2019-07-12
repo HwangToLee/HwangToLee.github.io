@@ -1,5 +1,5 @@
 ---
-title: Python 03. 파이썬 Django Memo 앱 만들기
+title: Django 03. Django Memo 앱 만들기
 date: '2019-07-12 09:00:00'
 categories: Python/Django
 ---

@@ -1,5 +1,5 @@
 ---
-title: 파이썬 Django 사전준비
+title: Django 01. 파이썬 Django 사전준비
 date: '2019-07-10 10:10:00'
 categories: Python/Django
 ---
