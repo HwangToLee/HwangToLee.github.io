@@ -2,6 +2,7 @@
 title: Django 01. 파이썬 Django 사전준비
 date: '2019-07-10 10:10:00'
 categories: Python/Django
+comments: true
 ---
 
 이번 포스트부터는 파이썬 웹 프로그래밍 오픈소스 프레임워크인 Django에 대해서 다루어보려고 한다. 이 포스트에서는 앞으로 파이썬 Django를 할 때 필요한 기초적인 프로그램들을 소개하려고 한다. (이 포스트는 [YOUTUBE : LIFE SOFT](https://www.youtube.com/channel/UCqRTjWqD-ZWHj0ZoPSKVWBw) 님이 게시하시는 글을 통해 공부하고 작성한 것이다.)
@@ -20,3 +21,25 @@ categories: Python/Django
 SQLite Expert를 통해 데이터베이스를 보고 관리할 수 있다. SQLite Expert 또한 [SQLite Expert](http://www.sqliteexpert.com/)에서 Personal 버전은 무료로 받을 수 있다.
 
 이 정도면 기본적인 준비는 끝났다고 생각한다. 다음 포스트에서는 Django에서 Bookmark앱을 만들어 볼 것이다.
+
+<div id="disqus_thread"></div>
+<script>
+{% if page.comments %}
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://hwnagto.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
