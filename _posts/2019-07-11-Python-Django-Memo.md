@@ -156,7 +156,9 @@ def delete_memo(request):
 	<h2>한줄메모장</h2>
 	메모 갯수 : {{memoCount}}
 	<form method="post" action="insert_memo">
-        <!--{% csrf_token %}-->
+        {% raw %}
+        {% csrf_token %}
+        {% endraw %}
 		이름 : <input name="writer">
 		메모 : <input name="memo">
 		<input type="submit" value="확인">
@@ -182,7 +184,7 @@ def delete_memo(request):
 ```
 
 기본 화면에서는 for 문을 이용해서 **DB**에 있는 메모들을 번호, 이름, 메모(내용), 날짜 순으로 출력해준다. 메모 내용에 링크를 걸어서 http://localhost/detail?idx=(해당 인덱스 번호)로 갈 수 있게 해준다.  
-**csrf_token**은 주석처리를 하지 않고 써야한다. 현재 깃허브 블로그에서 오류가 떠서 임시로 주석처리 시켜놓았다.
+
 
 **memo/templates/detail.html**
 
