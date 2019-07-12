@@ -26,11 +26,11 @@ categories: Python/Django
 from django.conf.locale.ko import formats as ko_formats
 ko_formats.DATETIME_FORMAT = 'Y-m-d G:i:s'
 ```
-또한, INSTALLED_APPS라는 항목 안에 **‘memo’,**를 추가해주고, **LANGUAGE_CODE**을 **‘ko-kr’**, **TIME_ZONE**을 **‘Asia/Seoul’**로 수정해준다.
+또한, **INSTALLED_APPS**라는 항목 안에 **‘memo’,**를 추가해주고, **LANGUAGE_CODE**을 **‘ko-kr’**, **TIME_ZONE**을 **‘Asia/Seoul’**로 수정해준다.
 
 ### 4. 모델 클래스 정의와 Admin 사이트 설정
 
-<u>**memo/models.py**</u>  
+**<u>memo/models.py</u>**  
 
 ```python
 from django.db import models
@@ -49,7 +49,7 @@ class Memo(models.Model):
 나머지 2개는 **TextField**인데, **null=False**로 설정해서 무조건 내용이 있어야한다.  
 **post_date**는 날짜와 시간과 관련된 필드인데, 디폴트 값을 현재 날짜와 시각으로 설정해주었다.   
 
-<u>**memo/admin.py**</u>  
+**<u>memo/admin.py</u>**  
 
 ```python
 from django.contrib import admin
@@ -61,8 +61,8 @@ class MemoAdmin(admin.ModelAdmin):
 admin.site.register(Memo, MemoAdmin)
 ```
 
-MemoAdmin 클래스를 만들어서 Memo라는 클래스가 관리자페이지에서 어떻게 보일지 정의해준다.   
-**admin.site.register()** 함수를 통해 Memo와 MemoAdmin 클래스를 관리자 페이지에 등록해준다.  
+**MemoAdmin** 클래스를 만들어서 **Memo**라는 클래스가 관리자페이지에서 어떻게 보일지 정의해준다.   
+**admin.site.register()** 함수를 통해 **Memo**와 **MemoAdmin** 클래스를 관리자 페이지에 등록해준다.  
 
 이제 이렇게 만든 모델 클래스들을 데이터베이스에 반영해준다.   
 
@@ -74,15 +74,15 @@ python manage.py migrate</code>
 
 ### <code>python manage.py runserver localhost:80</code>
 
-이 코드를 anaconda prompt에 입력해주면 이제 http://localhost 나 http://localhost:80를 통해 접속할 수 있다.  
+이 코드를 **anaconda** **prompt**에 입력해주면 이제 http://localhost 나 http://localhost:80를 통해 접속할 수 있다.  
 주소 뒤에 **/admin**을 붙여서 관리자페이지에 접속해서 로그인해준다.  
 관리자 페이지에서 **Writer**과 **Memo**에 텍스트를 입력하고, 날짜와 시각을 설정해서 저장할 수 있다. 몇가지를 저장해보자. 
 
-SQLite Expert를 통해 db.sqlite3 파일을 확인해보면, **memo_memo** 테이블에 내용이 추가된 것을 알 수 있다.  
+**SQLite** **Expert**를 통해 **db.sqlite3** 파일을 확인해보면, **memo_memo** 테이블에 내용이 추가된 것을 알 수 있다.  
 
 ### 6. Url과 페이지 작성
 
-<u>**projname/urls.py**</u>  
+**<u>projname/urls.py</u>**  
 
 ```python
 from django.contrib import admin
@@ -101,7 +101,7 @@ urlpatterns = [
 
 ```
 
-<u>**memo/views.py**</u>  
+**<u>memo/views.py</u>**  
 
 ```python
 from django.shortcuts import redirect, render_to_response
@@ -143,7 +143,7 @@ def delete_memo(request):
 **memo.save** 함수는 **insert_memo**와 같이 **id**가 없을  때는 데이터 추가를, **update_memo**와 같이 id가 있을 때는 데이터 수정을 해준다.  
 **return redirect("/")**는 함수가 끝난 뒤 기본 화면 ("http://localhost")로 돌아가게 해준다.
 
-<u>**memo/templates/list.html**</u>
+**<u>memo/templates/list.html</u>**  
 
 ```html
 <!DOCTYPE html>
@@ -183,7 +183,7 @@ def delete_memo(request):
 </html>
 ```
 
-기본 화면에서는 for 문을 이용해서 **DB**에 있는 메모들을 번호, 이름, 메모(내용), 날짜 순으로 출력해준다. 메모 내용에 링크를 걸어서 http://localhost/detail?idx=(해당 인덱스 번호)로 갈 수 있게 해준다.  
+기본 화면에서는 for 문을 이용해서 DB에 있는 메모들을 번호, 이름, 메모(내용), 날짜 순으로 출력해준다. 메모 내용에 링크를 걸어서 http://localhost/detail?idx=(해당 인덱스 번호)로 갈 수 있게 해준다.  
 
 
 **<u>memo/templates/detail.html</u>**
