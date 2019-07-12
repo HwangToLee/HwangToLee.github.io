@@ -17,7 +17,7 @@ Anaconda Prompt에서 아래 코드를 입력한다.
 ### 2. settings.py 수정
 
 Django 디버깅 툴바의 설치를 완료했으니, 이제 사용하는 방법에 대해 알아보자.  
-앞으로 만들 프로젝트들의  **projname/projname/settings.py**를 수정해야한다.   
+앞으로 만들 프로젝트들의  **projname/settings.py**를 수정해야한다.   
 우선 아래 코드를 추가해준다.
 
 ```python

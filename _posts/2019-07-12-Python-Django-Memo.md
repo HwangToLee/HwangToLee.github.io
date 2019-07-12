@@ -20,7 +20,7 @@ comments: true
 
 <pre><code>python manage.py startapp memo </code></pre>
 그러면 해당 디렉토리에 메모장 앱에 관련된 디렉토리가 추가된다.  
-이 작업 후에  **projname/projname/settings.py**를 조금 수정해야한다.   
+이 작업 후에  **projname/settings.py**를 조금 수정해야한다.   
 맨 위에 아래 코드를 추가해줘서 날짜 및 시간을 한국식으로 나오게 조정해준다.
 
 ```python
