@@ -5,14 +5,22 @@ categories: Python/Django
 comments: true
 ---
 이번 포스트에서는 한줄 메모장을 만들어볼 것이다.  
--쓰다보니 전 포스트와 내용이 겹치는 것이 많아서 겹치는 부가 설명을 조금 배제했다.  
+-쓰다보니 전 포스트와 내용이 겹치는 것이 많아서 겹치는 부가 설명은 스킵했다.  
 그에 대한 세부적인 설명을 원한다면 [저번 포스트](https://hwangtolee.github.io/python/django/2019/07/11/Python-Django-Bookmark.html)를 보는 것을 추천한다.
 
 (이 포스트는 [YOUTUBE : LIFE SOFT](https://www.youtube.com/channel/UCqRTjWqD-ZWHj0ZoPSKVWBw) 님이 게시하시는 글을 통해 공부하고 작성한 것이다.)
 
-### 1~2. 새로운 프로젝트 만들기 및 기본 테이블, 관리자 계정 생성
+### 1. 새로운 프로젝트 만들기
 
-여기까지는 [저번 포스트](https://hwangtolee.github.io/python/django/2019/07/11/Python-Django-Bookmark.html)의 1번, 2번 과정과 동일하다. 
+**File -> New -> Other (Ctrl + N)**을 누르면 다양한 옵션들이 뜰 것이다.  
+**Django**를 검색하면 나오는 **PyDev**의 **Django**를 선택하고, 이름을 정해서 만들어주자.   
+
+### 2. 기본 테이블 생성 및 관리자 계정 (super user) 생성
+
+<code> python manage.py migrate </code>  
+**Anaconda Prompt**에서 이 코드를 입력해서 **db.sqlite3**라는 기본 테이블이 해당 디렉토리에 생성하자.  
+<code> python manage.py createsuperuser  </code>  
+또한, 이 코드를 입력해서 관리자 계정을 만들어주자.
 
 ### 3. 메모장 앱 만들기 및 세팅
 
