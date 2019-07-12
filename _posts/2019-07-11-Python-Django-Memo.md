@@ -1,11 +1,11 @@
 ---
-title: 파이썬 Django Memo 앱 만들기
-date: '2019-07-11 18:00:00'
+title: Python 03. 파이썬 Django Memo 앱 만들기
+date: '2019-07-12 09:00:00'
 categories: Python/Django
 ---
 이번 포스트에서는 한줄 메모장을 만들어볼 것이다.  
--쓰다보니 전 포스트와 내용이 겹치는 것이 많아서 부가 설명을 조금 배제했다.  
-세부적인 설명을 원한다면 [저번 포스트](https://hwangtolee.github.io/python/django/2019/07/11/Python-Django-Bookmark.html)를 보는 것을 추천한다.
+-쓰다보니 전 포스트와 내용이 겹치는 것이 많아서 겹치는 부가 설명을 조금 배제했다.  
+그에 대한 세부적인 설명을 원한다면 [저번 포스트](https://hwangtolee.github.io/python/django/2019/07/11/Python-Django-Bookmark.html)를 보는 것을 추천한다.
 
 (이 포스트는 [YOUTUBE : LIFE SOFT](https://www.youtube.com/channel/UCqRTjWqD-ZWHj0ZoPSKVWBw) 님이 게시하시는 글을 통해 공부하고 작성한 것이다.)
 
@@ -30,7 +30,7 @@ ko_formats.DATETIME_FORMAT = 'Y-m-d G:i:s'
 
 ### 4. 모델 클래스 정의와 Admin 사이트 설정
 
-**memo/models.py**  
+<u>**memo/models.py**</u>  
 
 ```python
 from django.db import models
@@ -49,7 +49,7 @@ class Memo(models.Model):
 나머지 2개는 **TextField**인데, **null=False**로 설정해서 무조건 내용이 있어야한다.  
 **post_date**는 날짜와 시간과 관련된 필드인데, 디폴트 값을 현재 날짜와 시각으로 설정해주었다.   
 
-**memo/admin.py**  
+<u>**memo/admin.py**</u>  
 
 ```python
 from django.contrib import admin
@@ -82,7 +82,7 @@ SQLite Expert를 통해 db.sqlite3 파일을 확인해보면, **memo_memo** 테�
 
 ### 6. Url과 페이지 작성
 
-**projname/urls.py**  
+<u>**projname/urls.py**</u>  
 
 ```python
 from django.contrib import admin
@@ -101,7 +101,7 @@ urlpatterns = [
 
 ```
 
-**memo/views.py**  
+<u>**memo/views.py**</u>  
 
 ```python
 from django.shortcuts import redirect, render_to_response
@@ -143,7 +143,7 @@ def delete_memo(request):
 **memo.save** 함수는 **insert_memo**와 같이 **id**가 없을  때는 데이터 추가를, **update_memo**와 같이 id가 있을 때는 데이터 수정을 해준다.  
 **return redirect("/")**는 함수가 끝난 뒤 기본 화면 ("http://localhost")로 돌아가게 해준다.
 
-**memo/templates/list.html**
+<u>**memo/templates/list.html**</u>
 
 ```html
 <!DOCTYPE html>
@@ -186,7 +186,7 @@ def delete_memo(request):
 기본 화면에서는 for 문을 이용해서 **DB**에 있는 메모들을 번호, 이름, 메모(내용), 날짜 순으로 출력해준다. 메모 내용에 링크를 걸어서 http://localhost/detail?idx=(해당 인덱스 번호)로 갈 수 있게 해준다.  
 
 
-**memo/templates/detail.html**
+**<u>memo/templates/detail.html</u>**
 
 ```html
 <!DOCTYPE html>
