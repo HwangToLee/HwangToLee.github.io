@@ -22,9 +22,10 @@ SQLite Expert를 통해 데이터베이스를 보고 관리할 수 있다. SQLit
 
 이 정도면 기본적인 준비는 끝났다고 생각한다. 다음 포스트에서는 Django에서 Bookmark앱을 만들어 볼 것이다.
 
+
+{% if page.comments %}
 <div id="disqus_thread"></div>
 <script>
-{% if page.comments %}
 /**
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/

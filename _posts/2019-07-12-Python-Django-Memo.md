@@ -2,6 +2,7 @@
 title: Django 03. Django Memo 앱 만들기
 date: '2019-07-12 09:00:00'
 categories: Python/Django
+comments: true
 ---
 이번 포스트에서는 한줄 메모장을 만들어볼 것이다.  
 -쓰다보니 전 포스트와 내용이 겹치는 것이 많아서 겹치는 부가 설명을 조금 배제했다.  
@@ -238,3 +239,29 @@ function del(){
 
 **details** 화면에서는 수정과 삭제가 가능하다. **form**의 **input**을 사용해서 이름과 메모를 수정할 수 있고, 수정 버튼을 누르면 **update()**함수를 통해 DB가 업데이트되고, **views.py**에서 썼던 **redirect("/")**함수를 통해 기본 페이지로 돌아간다. 삭제 또한 삭제 후 **redirect("/")**를 통해 기본 페이지로 돌아간다.  
 **idx**값 또한 수정이나 삭제할 때 넘겨줘야하기 때문에, 사용자에게는 필요없는 정보라서 **type="hidden"**으로 설정해줘서 데이터로만 전달한다.
+
+
+
+
+
+{% if page.comments %}
+<div id="disqus_thread"></div>
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://hwnagto.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}

@@ -2,6 +2,7 @@
 title: Django 02. Django Bookmark 앱 만들기
 date: '2019-07-11 11:00:00'
 categories: Python/Django
+comments: true
 ---
 [앞선 포스트](https://hwangtolee.github.io/python/django/2019/07/10/Python-Django-Preperations.html)에서 파이썬 Django를 이클립스에서 사용하기 위한 최소한의 세팅을 끝냈다. 이번 포스트에서는 북마크 앱을 만들어 볼 것이다.
 
@@ -166,3 +167,26 @@ def detail(request):
 즉, 작동방식은 이와 같다. u**rl patterns**를 보고 현재 **url**에 해당하는 함수를 호출한다.  
 해당하는 함수는 호출되면 템플릿에 데이터를 집어넣어서 유저에게 보여준다. 
 
+
+
+{% if page.comments %}
+<div id="disqus_thread"></div>
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://hwnagto.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
