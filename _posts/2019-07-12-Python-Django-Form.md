@@ -268,13 +268,13 @@ function show_result(){
 		<th>응답수</th>
 		<th>응답비율</th>
 	</tr>
-	{% for row,ans in surveyList %}
+    {% raw %}{% for row,ans in surveyList %}
 	<tr align="center">
 		<td>{{ans}}</td>
 		<td>{{row.sum_num}}</td>
 		<td>{{row.rate}}</td>
 	</tr>
-	{% endfor %}
+	{% endfor %}{% raw %}
 </table>
 </body>
 </html>
