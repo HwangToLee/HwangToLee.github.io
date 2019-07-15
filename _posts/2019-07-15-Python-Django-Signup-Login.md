@@ -220,7 +220,7 @@ def login_check(request):
 {% endraw %}
 ```
 
-**<code>{{form.as_table}}</code>**을 통해 **Django**에서 지원해주는 폼을 불러와서 아까 **forms.py**에서 설정했던 **fields**를 불러온다. 
+**<code>{% raw %}{{form.as_table}}{% endraw %}</code>**을 통해 **Django**에서 지원해주는 폼을 불러와서 아까 **forms.py**에서 설정했던 **fields**를 불러온다. 
 
 **<u>member/templates/login.html</u>**
 
