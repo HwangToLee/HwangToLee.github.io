@@ -82,7 +82,7 @@ urlpatterns = [
 
 ```
 
-**path **함수의 3번째 인수 **name**은 별칭으로, 후에 템플릿에서 <code>**{% raw %}{% url 'name' %}{% endraw %}**</code>을 사용함으로써 해당 주소를 불러올 수 있다.
+**path **함수의 3번째 인수 **name**은 별칭으로, 후에 템플릿에서 **<code>{% raw %}{% url 'name' %}{% endraw %}</code>**을 사용함으로써 해당 주소를 불러올 수 있다.
 
 **<u>member/forms.py</u>**
 
@@ -220,7 +220,7 @@ def login_check(request):
 {% endraw %}
 ```
 
-**{{form.as_table}}**을 통해 **Django**에서 지원해주는 폼을 불러와서 아까 **forms.py**에서 설정했던 **fields**를 불러온다. 
+**<code>{{form.as_table}}</code>**을 통해 **Django**에서 지원해주는 폼을 불러와서 아까 **forms.py**에서 설정했던 **fields**를 불러온다. 
 
 **<u>member/templates/login.html</u>**
 
