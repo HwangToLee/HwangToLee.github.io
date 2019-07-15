@@ -25,7 +25,6 @@ comments: true
 **Anaconda prompt**에서 해당 프로젝트의 디렉토리에 다음 코드를 입력한다.  
 
 <pre><code>python manage.py startapp member </code></pre>
-
 그러면 해당 디렉토리에 메모장 앱에 관련된 디렉토리가 추가된다.  
 이 작업 후에  **projname/settings.py**를 조금 수정해야한다.   
 또한, **INSTALLED_APPS**라는 항목 안에 **‘member’,**를 추가해주고, **LANGUAGE_CODE**을 **‘ko-kr’**, **TIME_ZONE**을 **‘Asia/Seoul’**로 수정해준다.
@@ -83,7 +82,7 @@ urlpatterns = [
 
 ```
 
-**path **함수의 3번째 인수 **name**은 별칭으로, 후에 템플릿에서 **{% url 'name' % }**을 사용함으로써 해당 주소를 불러올 수 있다.
+**path **함수의 3번째 인수 **name**은 별칭으로, 후에 템플릿에서 <code>**{% raw %}{% url 'name' % }{ % endraw %}**</code>을 사용함으로써 해당 주소를 불러올 수 있다.
 
 **<u>member/forms.py</u>**
 
