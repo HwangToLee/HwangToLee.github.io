@@ -20,7 +20,7 @@ comments: true
 <code> python manage.py createsuperuser  </code>  
 또한, 이 코드를 입력해서 관리자 계정을 만들어주자.
 
-### 3. 방명록 앱 만들기 및 세팅
+### 3. member 앱 만들기 및 세팅
 
 **Anaconda prompt**에서 해당 프로젝트의 디렉토리에 다음 코드를 입력한다.  
 
@@ -31,7 +31,7 @@ comments: true
 
 ### 4. 모델 클래스 정의와 Admin 사이트 설정
 
-**<u>guestbook/models.py</u>**  
+**<u>member/models.py</u>**  
 
 ```python
 from django import forms
