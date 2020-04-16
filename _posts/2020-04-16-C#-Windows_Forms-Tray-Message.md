@@ -5,7 +5,9 @@ categories: C#/Windows_Forms
 comments: true
 ---
 
-Visual Studio 2017 환경에서 C# Windows Forms 앱으로 Tray Message를 구현해보자.
+Visual Studio 2017 환경에서 C# Windows Forms 앱으로 Tray Message를 구현해보자.  
+
+(이 글은 가메출판사의 C# 7.0프로그래밍 실전프로젝트를 통해 공부한 내용을 작성했다.)  
 
 ### 1. 새로운 프로젝트 만들기
 
@@ -16,8 +18,8 @@ Visual Studio 2017 환경에서 C# Windows Forms 앱으로 Tray Message를 구�
 ![Traymsg_form1](https://user-images.githubusercontent.com/41281307/79418323-4a60f180-7fef-11ea-8917-b96595688a73.PNG)  
 위와 같이 form1을 버튼과 텍스트박스를 이용해 만들어준다.
 
-*버튼: btnMsg
-*텍스트박스: txtMsg
+*버튼: btnMsg  
+*텍스트박스: txtMsg  
 
 form1에 다음 코드를 추가해주자.
 
@@ -36,8 +38,8 @@ private void btnMsg_Click(object sender, EventArgs e)
 ![Traymsg_form2](https://user-images.githubusercontent.com/41281307/79418325-4af98800-7fef-11ea-98ad-2db20d0d4389.PNG)  
 위와 같이 form2를 Panel과 LinkLabel을 이용해서 만들어준다.  
 
-*Panel: plBack
-*LinkLabel: lblResult
+*Panel: plBack  
+*LinkLabel: lblResult  
 
 form2의 작성코드는 다음과 같다.
 ```C#
