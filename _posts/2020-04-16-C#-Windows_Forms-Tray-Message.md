@@ -13,7 +13,7 @@ Visual Studio 2017 환경에서 C# Windows Forms 앱으로 Tray Message를 구�
 
 ### 2. form1 만들기
 
-![ex_screenshot](../img/Traymsg_form1.png)  
+![ex_screenshot](....../img/Traymsg_form1.png)  
 위와 같이 form1을 버튼과 텍스트박스를 이용해 만들어준다.
 
 *버튼: btnMsg
