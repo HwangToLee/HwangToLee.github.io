@@ -88,9 +88,15 @@ private void Resize(object sender, EventArgs e)
 작동방식은 아래와 같다. 
 
 1. 우선, 기본적으로 자동으로 Column 너비를 조정해주는 DataGridView기준으로 너비가 정해져있는 Label 종류의 좌측 자리부터 잡아준다.
+
+   
+
 2. 그 후, TextBox들의 좌측 자리와 너비를 잡아준다.   
    TextBox들의 좌측 기준은 "해당하는 Label의 우측 끝 + 5"를 기준으로 잡았다.  
    그리고, TextBox들의 너비는 "우측 Label의 좌측 값 - 자신의 좌측값 - 5"로 정해주어서 우측 Label과의 5 간격을 유지해준다.
+
+   
+
 3. 같은 방법으로 버튼과 폼 컨트롤들을 정렬해준다.
 
 
