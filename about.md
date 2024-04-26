@@ -5,7 +5,9 @@ permalink: /about/
 feature-img: "assets/img/sample_feature_img_2.png"
 ---
 
-[![Portfolio](http://img.youtube.com/vi/BO6lLvBLjU4/0.jpg)](https://youtu.be/BO6lLvBLjU4) 
+## My Computer Grphaics Portfolio Video
+
+[![Portfolio](http://img.youtube.com/vi/BO6lLvBLjU4/sddefault.jpg)](https://youtu.be/BO6lLvBLjU4) 
 
 ---
 ## 1. Education
