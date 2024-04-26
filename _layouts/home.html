@@ -10,6 +10,16 @@ layout: default
   </div>
   {% endif %}
 
+ <!-- md-block -->
+ <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+</head>
+<body>
+    <div class="markdown-body">
+        <md-block src="./about.md">
+            <!-- README.md 로드 실패시 보이는 문구 -->
+            `README.md` was *not* found
+        </md-block>
+
   <!-- <div class="posts">
     {% for post in paginator.posts %}
     <div class="post-teaser">
