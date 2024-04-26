@@ -36,11 +36,11 @@ feature-img: "assets/img/sample_feature_img_2.png"
 
 
 ## 3. Awards and Honors
-• National Science & Technology Scholarship	2023~2024
-• Dean’s List		2023
-• Academic Excellence Scholarship	2020
-• KICS Summer Conference 2020: 5G ICT Convergence Service Idea Competition – Encouragement Award	2020
-• Admission Excellence Scholarship	2019
+- [2023~2024] National Science & Technology Scholarship
+- [2023] Dean’s List 2023
+- [2020] Academic Excellence Scholarship 2020
+- [2020] KICS Summer Conference 2020: 5G ICT Convergence Service Idea Competition – Encouragement Award 2020
+- [2020] Admission Excellence Scholarship 2019
 
 ## 4. Skills and Techniques
 • Programming Languages: Python, C	
