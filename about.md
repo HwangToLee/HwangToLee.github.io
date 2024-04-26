@@ -44,7 +44,7 @@ feature-img: "assets/img/sample_feature_img_2.png"
 
 ## 4. Skills and Techniques
 • Programming Languages: Python, C	
-• Computer Graphics
+- Computer Graphics
 - Unreal Engine: Developed a VR traffic accident simulator enhancing real-time interactive environments
 - Three.js, HLSL: Implemented a web-based 3D rendering tool for educational purposes
 - OpenCV: Done some computer vision projects for image processing 
