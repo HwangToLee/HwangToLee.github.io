@@ -5,7 +5,7 @@ permalink: /about/
 feature-img: "assets/img/sample_feature_img_2.png"
 ---
 
-## My Computer Grphaics Portfolio Video
+## My Computer Graphics Portfolio Video
 
 [![Portfolio](http://img.youtube.com/vi/BO6lLvBLjU4/sddefault.jpg)](https://youtu.be/BO6lLvBLjU4) 
 
