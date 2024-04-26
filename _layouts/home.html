@@ -10,17 +10,7 @@ layout: default
   </div>
   {% endif %}
 
- <!-- md-block -->
- <script type="module" src="https://md-block.verou.me/md-block.js"></script>
-</head>
-<body>
-    <div class="markdown-body">
-        <md-block src="../about.md">
-            <!-- README.md 로드 실패시 보이는 문구 -->
-            `README.md` was *not* found2
-        </md-block>
-
-  <!-- <div class="posts">
+  <div class="posts">
     {% for post in paginator.posts %}
     <div class="post-teaser">
       <header>
@@ -41,9 +31,9 @@ layout: default
       </div>
     </div>
     {% endfor %}
-  </div> -->
+  </div>
 
-  <!-- {% if paginator.total_pages > 1 %}
+ {% if paginator.total_pages > 1 %}
   <div class="pagination">
     {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | relative_url | replace: '//', '/' }}" class="button" >
@@ -59,4 +49,4 @@ layout: default
     {% endif %}
   </div>
   {% endif %}
-</div> -->
+</div>
